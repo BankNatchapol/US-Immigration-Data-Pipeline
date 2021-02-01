@@ -24,9 +24,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Create an ETL pipeline for I94 immigration, land temperatures, US demographics and airport datasets to form an analytics database on immigration events. A use case for this analytics database is to find immigration patterns to the US. For example, we could try to find answears to questions such as, do people from countries with warmer or cold climate immigrate to the US in large numbers?
+This project is to create ETL Data pipeline using spark for 4 datasets immigration, airport, us demographics and world temperature data.
 
-The project follows the follow steps:
+There are 5 detailed steps:
 * Step 1: Scope the Project and Gather Data
 * Step 2: Explore and Assess the Data
 * Step 3: Define the Data Model
@@ -43,9 +43,9 @@ The project follows the follow steps:
 
 ## Describe and Gather Data 
 ### I94 Immigration Data
-This data comes from the US National Tourism and Trade Office. In the past all foreign visitors to the U.S. arriving via air or sea were required to complete paper Customs and Border Protection Form I-94 Arrival/Departure Record or Form I-94W Nonimmigrant Visa Waiver Arrival/Departure Record and this dataset comes from this forms.
-
-This dataset forms the core of the data warehouse and the customer repository has a years worth of data for the year 2016 and the dataset is divided by month. For this project the data is in a folder located at ../../data/18-83510-I94-Data-2016/. Each months data is stored in an SAS binary database storage format sas7bdat. For this project we have chosen going to work with data for the month of April. However, the data extraction, transformation and loading utility functions have been designed to work with any month's worth of data.
+This data comes from the US National Tourism and Trade Office. 
+Each report contains international visitor arrival statistics by world regions and select countries (including top 20), type of visa, mode of transportation, age groups, states visited (first intended address only), and the top ports of entry (for select countries).
+The immigration data in a folder with the following path: ../../data/18-83510-I94-Data-2016/. There's a file for each month of the year. An example file name is i94_apr16_sub.sas7bdat. Each file has a three-letter abbreviation for the month name. So a full file path for June would look like this: ../../data/18-83510-I94-Data-2016/i94_jun16_sub.sas7bdat. 
 
 ### World Temperature Data
 The World Temperature dataset comes from Kaggle and represents global land temperatures by city.
