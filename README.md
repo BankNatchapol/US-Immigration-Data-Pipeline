@@ -36,7 +36,7 @@ There are 5 detailed steps:
 ## Step 1: Scope the Project and Gather Data
 
 ### Scope 
-- use spark to load data to workspace.
+- use spark to load data to workspace. why spark? because of Fast, powerful, simple trajectory, Spark unlocks the power of data by handling large-scale data with speed. It abstracts complexity of data access across countless landing zones such as the Hadoop Distributed File System (HDFS), relational databases, fast-moving data streams, distributed file systems and much more.
 - EDA for checking missing value.
 - cleaning data based on EDA result.
 - using spark to write parquet file
@@ -70,6 +70,7 @@ This is a simple table of airport codes and corresponding cities.
 
 ### Step 3: Define the Data Model
 #### 3.1 Conceptual Data Model
+this project using star schema for data model because its the simplest to implement.
 <img src="images/datamodel.png">
 
 #### 3.2 Mapping Out Data Pipelines
@@ -84,14 +85,6 @@ pipeline steps
 #### airport table
 #### us demograghic table
 #### land temperature table
-
-#### Step 5: Complete Project Write Up
-* Clearly state the rationale for the choice of tools and technologies for the project.
-* Propose how often the data should be updated and why.
-* Write a description of how you would approach the problem differently under the following scenarios:
- * The data was increased by 100x.
- * The data populates a dashboard that must be updated on a daily basis by 7am every day.
- * The database needed to be accessed by 100+ people.
 
 <!-- CONTACT -->
 ## Contact
