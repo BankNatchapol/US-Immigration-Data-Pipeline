@@ -23,8 +23,9 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
 This project is to create ETL Data pipeline using spark for 4 datasets immigration, airport, us demographics and world temperature data.
+
+In this project i use Spark because of Fast, powerful, simple trajectory, Spark unlocks the power of data by handling large-scale data with speed. It abstracts complexity of data access across countless landing zones such as the Hadoop Distributed File System (HDFS), relational databases, fast-moving data streams, distributed file systems and much more.
 
 There are 5 detailed steps:
 * Step 1: Scope the Project and Gather Data
@@ -33,10 +34,11 @@ There are 5 detailed steps:
 * Step 4: Run ETL to Model the Data
 * Step 5: Complete Project Write Up
 
+
 ## Step 1: Scope the Project and Gather Data
 
 ### Scope 
-- use spark to load data to workspace. why spark? because of Fast, powerful, simple trajectory, Spark unlocks the power of data by handling large-scale data with speed. It abstracts complexity of data access across countless landing zones such as the Hadoop Distributed File System (HDFS), relational databases, fast-moving data streams, distributed file systems and much more.
+- use spark to load data to workspace.
 - EDA for checking missing value.
 - cleaning data based on EDA result.
 - using spark to write parquet file
@@ -70,7 +72,7 @@ This is a simple table of airport codes and corresponding cities.
 
 ### Step 3: Define the Data Model
 #### 3.1 Conceptual Data Model
-this project using star schema for data model because its the simplest to implement.
+this project using star schema for data model because it's simpler to implement than other schema like snowflake schema.
 <img src="images/datamodel.png">
 
 #### 3.2 Mapping Out Data Pipelines
@@ -85,6 +87,17 @@ pipeline steps
 #### airport table
 #### us demograghic table
 #### land temperature table
+
+### Step 5: Project write up
+To deal with this senarios.
+#### The data was increased by 100x. 
+We can use Cloud service such as AWS Redshift to store our data and increase size of our machine.
+
+#### The pipelines would be run on a daily basis by 7 am every day.
+We can use scheduler to make our pipeline run on every specific times using tools such as Apache Airflow. 
+
+#### The database needed to be accessed by 100+ people.
+We can set our cloud database service to be auto-scaling that can lead more availability.
 
 <!-- CONTACT -->
 ## Contact
